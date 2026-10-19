@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/colors/token.css">
+    <link rel="stylesheet" href="./styles/global/body.css">
+    <link rel="stylesheet" href="./styles/global/logo.css">
+    <link rel="stylesheet" href="./styles/glassmorpism/glass.css">
+    <link rel="stylesheet" href="./styles/backGround/animatedBg.css">
+    <link rel="stylesheet" href="./styles/calculator/calculatorPage.css">
+    <title>Calculadora</title>
 </head>
 <body>
-    
+
+<header>
+    <img
+        class="app-logo"
+        src="./imgs/icons/agroCalLogoOtimizada.png"
+        alt="Logo AgroCal"
+    />
+    <a class="back-icon glass-card" href="./calculatorList.html" aria-label="Voltar para a lista de calculadoras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M19 12H5" />
+            <path d="m12 19-7-7 7-7" />
+        </svg>
+    </a>
+</header>
+
+<!-- From Uiverse.io by amir_6539 -->
+<div class="container" aria-hidden="true">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div></div>
+</div>
+
+<main class="calculatorPage">
+  <section class="calculator glass-card" aria-label="Calculadora">
+    <header class="calculator__head">
+      <div>
+        <p class="calculator__eyebrow">AgroCal</p>
+        <h1 class="calculator__title">Calculadora</h1>
+      </div>
+      <span class="calculator__badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+          <rect x="4" y="2" width="16" height="20" rx="3" />
+          <path d="M8 6h8" />
+          <path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01" />
+        </svg>
+      </span>
+    </header>
+
+    <div class="display glass-card" role="status" aria-live="polite" aria-label="Display da calculadora">
+      <span class="display__expr">&nbsp;</span>
+      <span class="display__value">0</span>
+    </div>
+
+    <div class="keypad" role="group" aria-label="Teclado da calculadora">
+      <button type="button" class="key key--util glass-card" data-action="clear">C</button>
+      <button type="button" class="key key--util glass-card" data-action="backspace" aria-label="Apagar">⌫</button>
+      <button type="button" class="key key--op glass-card" data-key="%">%</button>
+      <button type="button" class="key key--op glass-card" data-key="/" aria-label="Dividir">÷</button>
+
+      <button type="button" class="key glass-card" data-key="7">7</button>
+      <button type="button" class="key glass-card" data-key="8">8</button>
+      <button type="button" class="key glass-card" data-key="9">9</button>
+      <button type="button" class="key key--op glass-card" data-key="*" aria-label="Multiplicar">×</button>
+
+      <button type="button" class="key glass-card" data-key="4">4</button>
+      <button type="button" class="key glass-card" data-key="5">5</button>
+      <button type="button" class="key glass-card" data-key="6">6</button>
+      <button type="button" class="key key--op glass-card" data-key="-" aria-label="Subtrair">−</button>
+
+      <button type="button" class="key glass-card" data-key="1">1</button>
+      <button type="button" class="key glass-card" data-key="2">2</button>
+      <button type="button" class="key glass-card" data-key="3">3</button>
+      <button type="button" class="key key--op glass-card" data-key="+" aria-label="Somar">+</button>
+
+      <button type="button" class="key glass-card" data-key="negate" aria-label="Inverter sinal">±</button>
+      <button type="button" class="key glass-card" data-key="0">0</button>
+      <button type="button" class="key glass-card" data-key=".">,</button>
+      <button type="button" class="key key--eq glass-card" data-key="=" aria-label="Calcular">=</button>
+    </div>
+  </section>
+</main>
+
 </body>
 </html>
