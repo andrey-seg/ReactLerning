@@ -1,2 +1,2 @@
-# ExerciciosDeLogica
-Utilizo este repositório para armazenar exercícios de lista para logica 
+# ReactLerning
+Este repositório serve para armazenar meus projetos realizados em meus estudos de react
